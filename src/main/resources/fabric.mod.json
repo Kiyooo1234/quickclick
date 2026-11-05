@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "quickclick",
+	"version": "${version}",
+	"name": "Quick Click",
+	"description": "Shortens (but never removes) the left-click repeat delays: swinging at air and breaking blocks.",
+	"authors": ["Jan Rhey Cantillas"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.janrhey.quickclick.QuickClickClient"],
+		"modmenu": ["dev.janrhey.quickclick.ModMenuIntegration"]
+	},
+	"suggests": {
+		"modmenu": "*"
+	},
+	"mixins": ["quickclick.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
